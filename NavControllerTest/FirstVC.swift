@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BlackVC: BaseVC {
+class FirstVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class BlackVC: BaseVC {
     }
     
     @objc func didTapButton(_ sender: UIButton) {
-        navigationController?.pushViewController(WhiteVC(), animated: true)
+        navigationController?.pushViewController(SecondVC(), animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

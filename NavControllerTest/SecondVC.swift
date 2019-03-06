@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WhiteVC: BaseVC {
+class SecondVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
