@@ -33,27 +33,5 @@ class FirstVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //        navigationController?.navigationBar.barStyle = .blackOpaque
-        //        navigationController?.navigationBar.isTranslucent = false
-        //        navigationController?.navigationBar.tintColor = .white
-        
-        //        self.navigationController?.navigationBar.tintAdjustmentMode = .normal
-        //        self.navigationController?.navigationBar.tintAdjustmentMode = .automatic
-    }
-    
-    override func setBeforePopNavigationColors() {
-        navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        self.preferredStatusBarStyle = UIStatusBarStyle.default
-    }
-    
-    override func setNavigationColors() {
-//        navigationController?.navigationBar.barTintColor = UIColor.red
-//        navigationController?.navigationBar.tintColor = UIColor.blue
-        navigationController?.navigationBar.barTintColor = UIColor.white
-        navigationController?.navigationBar.tintColor = UIColor.black
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        navigationController?.navigationBar.barStyle = UIBarStyle.black
-        self.preferredStatusBarStyle = UIStatusBarStyle.default
     }
 }

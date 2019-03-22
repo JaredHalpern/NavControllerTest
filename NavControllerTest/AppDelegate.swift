@@ -15,13 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let backImage = UIImage(named: "Arrow-Left-Black")
+        UINavigationBar.appearance().backIndicatorImage = backImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+//        UINavigationItem.appearance() // no appearance proxy for this component
         
         let vc = FirstVC()
         let navVC = NavigationController.init(rootViewController: vc)
-        window = UIWindow(frame: UIScreen.main.bounds)   
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navVC
+        window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
-
+        
         return true
     }
 
