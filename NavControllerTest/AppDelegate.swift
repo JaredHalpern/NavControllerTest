@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().backIndicatorImage = backImage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
         UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
 //        UINavigationItem.appearance() // no appearance proxy for this component
         
         let vc = FirstVC()
