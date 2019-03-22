@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let backImage = UIImage(named: "Arrow-Left-Black")
         UINavigationBar.appearance().backIndicatorImage = backImage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+        UINavigationBar.appearance().tintColor = .black
 //        UINavigationItem.appearance() // no appearance proxy for this component
         
         let vc = FirstVC()
